@@ -1,0 +1,17 @@
+{
+  "stage_m": 5.0,
+  "stream_threshold": 200,
+  "resolution_m": 30,
+  "crs": "EPSG:5070",
+  "max_tiles": null,
+  "boundary": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_state_500k.zip",
+  "recipe": "conditioned-HAND-v1",
+  "packages": {
+    "numpy": "2.5.2",
+    "pysheds": "0.5",
+    "numba": "0.67.0",
+    "rasterio": "1.5.0",
+    "geopandas": "1.1.3",
+    "matplotlib": "3.11.0"
+  }
+}

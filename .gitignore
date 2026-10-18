@@ -4,3 +4,25 @@
 # Reproducible experiment downloads and large training checkpoints
 homework4-data/
 homework4-output/*.pt
+
+# Local OS files and notebook recovery copies
+.DS_Store
+.ipynb_checkpoints/
+*.before-*.ipynb
+*.original-pattern-clean.ipynb
+
+# Environments, downloaded archives, and training checkpoints
+.venv*/
+__pycache__/
+*.pyc
+*.zip
+*.pt
+
+# Duplicate assignment submission packages; keep the canonical root notebooks
+/Frederick_Abalo_Assignment4/
+/frederick_abalo_homework1/
+/homework2_deliverables/
+/homework4-submission/
+
+# Older generated HAND report; the current result is under homework2-output
+/HAND_Results/
