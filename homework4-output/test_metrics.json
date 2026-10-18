@@ -1,0 +1,8 @@
+{
+  "model": "B_plain_aug",
+  "best_epoch": 27,
+  "validation_accuracy": 0.9767901234567902,
+  "test_accuracy": 0.9772839506172839,
+  "test_macro_f1": 0.9766744322375981,
+  "n_test": 4050
+}

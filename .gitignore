@@ -1,2 +1,6 @@
 *.tif
 !lab6-machine-learning/testimg.tif
+
+# Reproducible experiment downloads and large training checkpoints
+homework4-data/
+homework4-output/*.pt
