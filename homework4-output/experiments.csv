@@ -1,0 +1,6 @@
+name,residual,augment,dropout,seed,best_epoch,val_accuracy,val_loss,parameters,minutes,checkpoint
+S_corrected_starter,False,False,0.0,42,29,0.8664197530864197,0.695518204488872,1626442,2.564415819432664,homework4-output/S_corrected_starter_seed42.pt
+A_plain,False,False,0.0,42,25,0.9725925925925926,0.10112869040097719,1228970,6.5143445451326745,homework4-output/A_plain_seed42.pt
+B_plain_aug,False,True,0.0,42,27,0.9767901234567902,0.07102966977674284,1228970,6.538795693750338,homework4-output/B_plain_aug_seed42.pt
+C_residual_aug,True,True,0.0,42,30,0.9745679012345679,0.0791110558771057,1228970,7.024274272915985,homework4-output/C_residual_aug_seed42.pt
+D_residual_aug_dropout,True,True,0.25,42,28,0.9725925925925926,0.0756762344656903,1228970,6.771082681250603,homework4-output/D_residual_aug_dropout_seed42.pt
