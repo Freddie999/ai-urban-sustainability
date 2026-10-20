@@ -1,6 +1,25 @@
-*.tif
-!lab6-machine-learning/testimg.tif
+# Local OS metadata, notebook autosaves, and Python environments
+.DS_Store
+.ipynb_checkpoints/
+.venv*/
+__pycache__/
+*.py[cod]
+.env
+.env.*
 
-# Reproducible experiment downloads and large training checkpoints
-homework4-data/
-homework4-output/*.pt
+# Recovery notebooks and duplicate submission archives
+*.before-*.ipynb
+*.original-pattern-clean.ipynb
+*.zip
+/README.html
+/README_files/
+
+# Downloaded imagery, intermediate rasters, and model checkpoints
+*.tif
+*.tiff
+*.tif.aux.xml
+*.tif.msk
+*.pt
+!lab6-machine-learning/testimg.tif
+/data/
+/homework4-data/

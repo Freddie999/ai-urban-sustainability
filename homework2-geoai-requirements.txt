@@ -1,0 +1,5 @@
+# Additions to the existing geoai conda environment (Python 3.14, NumPy 2).
+# Keep the environment's existing NumPy, Rasterio, GeoPandas, and Matplotlib.
+numba==0.67.0
+# Official upstream revision includes NumPy 2 compatibility fixes.
+pysheds @ git+https://github.com/mdbartos/pysheds.git@eddbf8d63cd5d3d254cc64de6022409bd145b3fd

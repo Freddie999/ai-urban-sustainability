@@ -1,0 +1,36 @@
+{
+  "executed_cells": 25,
+  "warning_types": [],
+  "mosaic_nodata": 256.0,
+  "masked_shape": [
+    41056,
+    48897
+  ],
+  "tile_count": 525,
+  "tile_pixels_match_city_raster": true,
+  "vegetation_sample_tiles_checked": 4,
+  "tract_rows": 196,
+  "tracts_without_valid_pixels": 0,
+  "independent_tract_checks": [
+    {
+      "tract": "06075011200",
+      "valid_pixels": 492452,
+      "valid_zero_ndvi_pixels": 2399,
+      "absolute_mean_difference": 6.504535521312249e-10
+    },
+    {
+      "tract": "06075026402",
+      "valid_pixels": 1137708,
+      "valid_zero_ndvi_pixels": 3896,
+      "absolute_mean_difference": 2.9064443907156345e-10
+    },
+    {
+      "tract": "06075032700",
+      "valid_pixels": 2342792,
+      "valid_zero_ndvi_pixels": 6318,
+      "absolute_mean_difference": 3.6961977922800315e-10
+    }
+  ],
+  "mean_absolute_tract_change": 0.00040919912491928646,
+  "max_absolute_tract_change": 0.0019444242510449905
+}

@@ -1,0 +1,29 @@
+{
+  "tracts": 196,
+  "vegetation_percentage_range": [
+    0.000421981277498,
+    67.30303479196162
+  ],
+  "existing_ndvi_and_valid_counts_unchanged": true,
+  "independent_vegetation_checks": [
+    {
+      "tract": "06075011200",
+      "veg_pct": 11.887249924865774,
+      "veg_pixels": 58539,
+      "valid_pixels": 492452
+    },
+    {
+      "tract": "06075026402",
+      "veg_pct": 19.89447204379331,
+      "veg_pixels": 226341,
+      "valid_pixels": 1137708
+    },
+    {
+      "tract": "06075032700",
+      "veg_pct": 15.074022789901964,
+      "veg_pixels": 353153,
+      "valid_pixels": 2342792
+    }
+  ],
+  "saved_notebook_maps": 2
+}
