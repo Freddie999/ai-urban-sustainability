@@ -22,4 +22,4 @@ __pycache__/
 *.pt
 !lab6-machine-learning/testimg.tif
 /data/
-/homework4-data/
+/assignments/homework4/homework4-data/

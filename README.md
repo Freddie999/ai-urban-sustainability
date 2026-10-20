@@ -2,13 +2,13 @@
 
 Academic work by **Frederick Abalo**, University of Pennsylvania.
 
-[Portfolio](https://freddie999.github.io/portfolio/) · [Executed classification notebook](assignments/Homework4.ipynb)
+[Portfolio](https://freddie999.github.io/portfolio/) · [Executed classification notebook](assignments/homework4/Homework4.ipynb)
 
 ## Featured project: EuroSAT RGB classification
 
 Classifying satellite image patches into ten land-use and land-cover classes. I compare five convolutional-network configurations, testing deeper features, global average pooling, image augmentation, skip connections, and dropout.
 
-![Held-out confusion matrix](homework4-output/confusion_matrix.png)
+![Held-out confusion matrix](assignments/homework4/homework4-output/confusion_matrix.png)
 
 ### Experiment and results
 
@@ -24,14 +24,14 @@ Skip connections and dropout did not improve the selection metric in this run. T
 
 ### Inspect or reproduce
 
-Open [Homework4.ipynb](assignments/Homework4.ipynb) to inspect saved outputs without retraining. [homework4-output/](homework4-output/) contains metrics, predictions, training histories, normalization statistics, figures, and the split manifest. Downloaded imagery and model checkpoints are excluded.
+Open [Homework4.ipynb](assignments/homework4/Homework4.ipynb) to inspect saved outputs without retraining. [Homework 4 results](assignments/homework4/homework4-output/) contains metrics, predictions, training histories, normalization statistics, figures, and the split manifest. Downloaded imagery and model checkpoints are excluded.
 
 To train in an isolated environment from this repository root:
 
 ```bash
 uv venv --python 3.12 .venv-portfolio
-uv pip install --python .venv-portfolio/bin/python -r requirements-portfolio.txt
-.venv-portfolio/bin/jupyter lab assignments/Homework4.ipynb
+uv pip install --python .venv-portfolio/bin/python -r assignments/homework4/requirements-portfolio.txt
+.venv-portfolio/bin/jupyter lab assignments/homework4/Homework4.ipynb
 ```
 
 ## Final homework and answers
@@ -40,14 +40,14 @@ The notebooks in `assignments/` are the canonical homework answers. Their saved 
 
 | Assignment | Final notebook | Supporting answers and results |
 |---|---|---|
-| 1 · San Francisco vegetation and NDVI | [Homework1.ipynb](assignments/Homework1.ipynb) | [Tract maps, statistics, and validation records](homework1-output-corrected/) |
-| 2 · Pennsylvania flood mapping with HAND | [Homework2.ipynb](assignments/Homework2.ipynb) | [Written report](HAND_Results/PA_HAND_report.md), [standalone HTML report](HAND_Results/PA_HAND_report.html), [inundation map](HAND_Results/PA_inundation_map.png) |
-| 3 · Philadelphia hourly shadows | [Homework3.ipynb](assignments/Homework3.ipynb) | [Hourly maps, animation, and solar positions](homework3-output/2025-09-15/) |
-| 4 · EuroSAT image classification | [Homework4.ipynb](assignments/Homework4.ipynb) | [Metrics, predictions, and figures](homework4-output/) |
+| 1 · San Francisco vegetation and NDVI | [Homework1.ipynb](assignments/homework1/Homework1.ipynb) | [Tract maps, statistics, and validation records](assignments/homework1/homework1-output-corrected/) |
+| 2 · Pennsylvania flood mapping with HAND | [Homework2.ipynb](assignments/homework2/Homework2.ipynb) | [Written report](assignments/homework2/HAND_Results/PA_HAND_report.md), [standalone HTML report](assignments/homework2/HAND_Results/PA_HAND_report.html), [inundation map](assignments/homework2/HAND_Results/PA_inundation_map.png) |
+| 3 · Philadelphia hourly shadows | [Homework3.ipynb](assignments/homework3/Homework3.ipynb) | [Hourly maps, animation, and solar positions](assignments/homework3/homework3-output/2025-09-15/) |
+| 4 · EuroSAT image classification | [Homework4.ipynb](assignments/homework4/Homework4.ipynb) | [Metrics, predictions, and figures](assignments/homework4/homework4-output/) |
 
-Homework 1 and 2 were recovered from the saved coursework branch and matched the submitted notebooks before their file paths were adjusted for the `assignments/` folder. Homework 3 was recovered from that branch; its figures match the saved results package. Homework 4 retains the executed portfolio version. Homework 2 uses `HAND_Results/`; the earlier projected statewide experiment is archived separately.
+Homework 1 and 2 were recovered from the saved coursework branch and matched the submitted notebooks before their file paths were adjusted for the `assignments/` folder. Homework 3 was recovered from that branch; its figures match the saved results package. Homework 4 retains the executed portfolio version. Homework 2 uses `assignments/homework2/HAND_Results/`; the earlier projected statewide experiment is archived separately.
 
-Homework 1, 2, and 4 resolve their data and output paths from either the repository root or `assignments/`. Homework 3 is written for Google Colab with a CUDA GPU and a Google Drive DSM path; update that path before running it. Downloaded imagery, generated GeoTIFFs, local environments, and model weights stay outside Git. Compact Homework 1–3 results were recovered from saved coursework; their earlier validation records are retained, not newly generated by this cleanup.
+Each homework has its own folder under `assignments/`, containing its notebook, results, and any local data. Homework 1, 2, and 4 resolve paths from the repository root, `assignments/`, or their homework folder. Homework 3 is written for Google Colab with a CUDA GPU and a Google Drive DSM path; update that path before running it. Downloaded imagery, generated GeoTIFFs, local environments, and model weights stay outside Git. Compact Homework 1–3 results were recovered from saved coursework; their earlier validation records are retained, not newly generated by this cleanup.
 
 Additional Python and regression exercises are in [practice/](practice/). Instructor labs remain in their numbered folders.
 
@@ -161,12 +161,11 @@ Read the paper of [Attention is All You Need](https://papers.neurips.cc/paper/71
 
 ```text
 ai-urban-sustainability/
-├── assignments/                     # Final Homework1.ipynb … Homework4.ipynb
-├── homework1-output-corrected/       # Final tract maps and statistics
-├── HAND_Results/                    # Homework 2 report and map
-├── homework2-output/                # Local DEM downloads (ignored)
-├── homework3-output/2025-09-15/      # Hourly shadows and animation
-├── homework4-output/                # Classification evidence
+├── assignments/
+│   ├── homework1/                   # Notebook and tract maps/statistics
+│   ├── homework2/                   # Notebook, HAND report, DEMs, requirements
+│   ├── homework3/                   # Notebook, DSM, hourly maps and animation
+│   └── homework4/                   # Notebook, imagery, metrics, requirements
 ├── practice/                        # Python and regression exercises
 ├── data/lab9/                       # Local U-Net source imagery (ignored)
 ├── lab1-basics-python-spatial-programing/
